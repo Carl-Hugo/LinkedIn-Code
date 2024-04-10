@@ -24,6 +24,7 @@ app.MapGet("/load-plugins", (IWebHostEnvironment hostingEnvironment, ILoggerFact
     }
     var programLogger = loggerFactory.CreateLogger("Program");
     programLogger.LogInformation("Program using const: {const}", Constants.MY_CONST);
+    programLogger.LogInformation("Program using readonly: {readonly}", Constants.MY_READONLY);
     return Results.Ok($"Plugins loaded and executed. Current constant value: {Constants.MY_CONST}");
 });
 
