@@ -1,4 +1,3 @@
-// Program.cs
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddSingleton<IService, Service>();
 var app = builder.Build();
