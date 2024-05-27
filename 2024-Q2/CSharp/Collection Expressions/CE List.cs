@@ -1,0 +1,1 @@
+List<string> fruits = ["Apple", "Banana", "Cherry"];
