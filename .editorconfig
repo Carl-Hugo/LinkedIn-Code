@@ -1,35 +1,37 @@
 #
 # Severity: suggestion, warning, error
 #
-#top-most EditorConfig file
+# Top-most EditorConfig file
 root = true
 
 [*]
 
-#Formatting - indentation
-#use soft tabs (spaces) for indentation
-indent_style = space
+# Formatting—indentation
+indent_style = space # Use soft tabs (spaces) for indentation
 
 [*.cs]
 
-#Formatting - indentation
+# Formatting—indentation
 
 # Namespace
 csharp_style_namespace_declarations = file_scoped:warning
 
-#size of soft tabs (spaces)
+# Size of soft tabs (spaces)
 indent_size = 4
-#remove any whitespace characters preceding newline characters
+
+# Remove any whitespace characters preceding newline characters
 trim_trailing_whitespace = true
 
-#Formatting - indentation options
+# Formatting—indentation options
 
-#indent switch case contents.
+# Indent switch case contents.
 csharp_indent_case_contents = true
-#indent switch labels
+# Indent switch labels
 csharp_indent_switch_labels = true
 
-#Formatting - new line options
+# ...
+
+# Formatting—new line options
 
 #place catch statements on a new line
 csharp_new_line_before_catch = true
