@@ -1,0 +1,11 @@
+﻿@MemoryCache_HostAddress = https://localhost:7232
+
+GET {{MemoryCache_HostAddress}}/products/1
+
+###
+GET {{MemoryCache_HostAddress}}/products/2
+
+###
+GET {{MemoryCache_HostAddress}}/products/3
+
+###
