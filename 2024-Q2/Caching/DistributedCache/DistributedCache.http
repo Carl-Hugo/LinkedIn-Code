@@ -1,0 +1,11 @@
+﻿@DistributedCache_HostAddress = https://localhost:7021
+
+GET {{DistributedCache_HostAddress}}/products/1
+
+###
+GET {{DistributedCache_HostAddress}}/products/2
+
+###
+GET {{DistributedCache_HostAddress}}/products/3
+
+###
