@@ -1,0 +1,11 @@
+﻿@HybridCacheApp_HostAddress = https://localhost:7117
+
+GET {{HybridCacheApp_HostAddress}}/products/1
+
+###
+GET {{HybridCacheApp_HostAddress}}/products/2
+
+###
+GET {{HybridCacheApp_HostAddress}}/products/3
+
+###
