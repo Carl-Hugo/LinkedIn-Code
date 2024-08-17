@@ -1,0 +1,6 @@
+@host = http://localhost:5071
+
+GET {{host}}/increment/10
+
+###
+GET {{host}}/increment/50?increment=10
