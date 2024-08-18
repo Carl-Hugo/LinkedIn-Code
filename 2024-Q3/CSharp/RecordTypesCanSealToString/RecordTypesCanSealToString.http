@@ -1,0 +1,9 @@
+@Host = http://localhost:5043
+
+GET {{Host}}/person
+
+###
+
+GET {{Host}}/student
+
+###

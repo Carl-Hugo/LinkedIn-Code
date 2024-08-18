@@ -1,0 +1,11 @@
+{
+    "@type": "Person",
+    "firstName": "John",
+    "lastName": "Doe"
+}
+{
+    "@type": "Student",
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "school": "AroundTheCorner High"
+}
