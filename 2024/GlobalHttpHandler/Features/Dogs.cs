@@ -4,16 +4,16 @@ namespace GlobalHttpHandler.Features.Dogs;
 
 public class DogApiClient(HttpClient client)
 {
-    public async Task<Dictionary<string, object>?[]> FetchRandomDogsAsync(CancellationToken cancellationToken)
+    public async Task<Image[]> FetchRandomDogsAsync(CancellationToken cancellationToken)
     {
         var url = $"images/search?page=0&limit=15&has_breeds=true&include_breeds=true&include_categories=true";
-        return await client.GetFromJsonAsync<Dictionary<string, object>[]>(url, cancellationToken) ?? [];
+        return await client.GetFromJsonAsync<Image[]>(url, cancellationToken) ?? [];
     }
 
-    public async Task<Dictionary<string, object>> FetchDogAsync(string dogId, CancellationToken cancellationToken)
+    public async Task<Image?> FetchDogAsync(string dogId, CancellationToken cancellationToken)
     {
         var url = $"images/{dogId}";
-        return await client.GetFromJsonAsync<Dictionary<string, object>?>(url, cancellationToken) ?? [];
+        return await client.GetFromJsonAsync<Image>(url, cancellationToken);
     }
 }
 
@@ -49,7 +49,6 @@ public static class WebApplicationBuilderExtensions
             .AddOptionsWithValidateOnStart<DogApiSettings>()
             .Bind(builder.Configuration.GetSection("dogApi"))
         ;
-
         return builder;
     }
 }
@@ -59,11 +58,38 @@ public static class WebApplicationExtensions
     public static WebApplication MapDogsEndpoints(this WebApplication app)
     {
         app.MapGet("api/dogs", async (DogApiClient dogService, CancellationToken cancellationToken)
-            => await dogService.FetchRandomDogsAsync(cancellationToken));
+            => await dogService.FetchRandomDogsAsync(cancellationToken))
+            .WithDisplayName("Fetch random dogs");
 
         app.MapGet("api/dogs/{dogId}", async (string dogId, DogApiClient dogService, CancellationToken cancellationToken)
-            => await dogService.FetchDogAsync(dogId, cancellationToken));
+            => await dogService.FetchDogAsync(dogId, cancellationToken))
+            .WithDisplayName("Fetch the details of the specified dog");
 
         return app;
     }
 }
+
+public record Weight(string Imperial, string Metric);
+
+public record Height(string Imperial, string Metric);
+
+public record Breed(
+    Weight Weight,
+    Height Height,
+    int Id,
+    string Name,
+    string? BredFor,
+    string? BreedGroup,
+    string LifeSpan,
+    string Temperament,
+    string? Origin,
+    string ReferenceImageId
+);
+
+public record Image(
+    string Id,
+    string Url,
+    int Width,
+    int Height,
+    List<Breed> Breeds
+);

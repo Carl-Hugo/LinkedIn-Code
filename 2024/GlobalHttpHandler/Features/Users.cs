@@ -2,10 +2,10 @@
 
 public class JsonPlaceholderApiClient(HttpClient client)
 {
-    public async Task<Dictionary<string, object>?> FetchUserAsync(int userId, CancellationToken cancellationToken)
+    public async Task<User?> FetchUserAsync(int userId, CancellationToken cancellationToken)
     {
         var url = $"users/{userId}";
-        return await client.GetFromJsonAsync<Dictionary<string, object>>(url, cancellationToken);
+        return await client.GetFromJsonAsync<User>(url, cancellationToken);
     }
 }
 
@@ -33,3 +33,20 @@ public static class WebApplicationExtensions
         return app;
     }
 }
+
+public record Geo(string Lat, string Lng);
+
+public record Address(string Street, string Suite, string City, string Zipcode, Geo Geo);
+
+public record Company(string Name, string CatchPhrase, string Bs);
+
+public record User(
+    int Id,
+    string Name,
+    string Username,
+    string Email,
+    Address Address,
+    string Phone,
+    string Website,
+    Company Company
+);
