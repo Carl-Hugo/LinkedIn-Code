@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Create Schema", "Create Schema\Create Schema.csproj", "{C69A972B-8F0C-419F-9835-1D03448EA9E7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customize Schema Serialization", "Customize Schema Serialization\Customize Schema Serialization.csproj", "{ECA1EE6C-2E0F-4BAE-8B71-744A791DE3BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{C69A972B-8F0C-419F-9835-1D03448EA9E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C69A972B-8F0C-419F-9835-1D03448EA9E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C69A972B-8F0C-419F-9835-1D03448EA9E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECA1EE6C-2E0F-4BAE-8B71-744A791DE3BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECA1EE6C-2E0F-4BAE-8B71-744A791DE3BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECA1EE6C-2E0F-4BAE-8B71-744A791DE3BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECA1EE6C-2E0F-4BAE-8B71-744A791DE3BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
