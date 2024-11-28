@@ -1,0 +1,13 @@
+{
+    "type": ["object", "null"],
+    "properties": {
+        "UserId": {
+            "type": "string",
+            "format": "uuid"
+        },
+        "Address": {
+            "type": "string"
+        }
+    },
+    "required": ["UserId", "Address"]
+}
