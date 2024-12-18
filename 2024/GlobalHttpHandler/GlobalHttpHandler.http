@@ -1,0 +1,15 @@
+﻿@GlobalHttpHandler_HostAddress = https://localhost:7171
+
+GET {{GlobalHttpHandler_HostAddress}}/api/dogs
+
+###
+
+@dogId=ryqWuE_1T
+GET {{GlobalHttpHandler_HostAddress}}/api/dogs/{{dogId}}
+
+###
+
+@userId=2
+GET {{GlobalHttpHandler_HostAddress}}/api/users/{{userId}}
+
+###
