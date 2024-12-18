@@ -1,0 +1,76 @@
+﻿###
+### Successful Request
+POST https://localhost:7101/submit-application
+Content-Type: application/json
+
+{
+  "applicantName": "John Doe",
+  "email": "johndoe@example.com",
+  "position": "Software Engineer",
+  "yearsOfExperience": 5
+}
+
+###
+
+### Validation Error: Missing applicant name
+POST https://localhost:7101/submit-application
+Content-Type: application/json
+
+{
+  "applicantName": "",
+  "email": "johndoe@example.com",
+  "position": "Software Engineer",
+  "yearsOfExperience": 5
+}
+
+###
+
+### Validation Error: Invalid email
+POST https://localhost:7101/submit-application
+Content-Type: application/json
+
+{
+  "applicantName": "John Doe",
+  "email": "not-an-email",
+  "position": "Software Engineer",
+  "yearsOfExperience": 5
+}
+
+###
+
+### Validation Error: Missing position
+POST https://localhost:7101/submit-application
+Content-Type: application/json
+
+{
+  "applicantName": "John Doe",
+  "email": "johndoe@example.com",
+  "position": "",
+  "yearsOfExperience": 5
+}
+
+###
+
+### Validation Error: Years of experience out of range
+POST https://localhost:7101/submit-application
+Content-Type: application/json
+
+{
+  "applicantName": "John Doe",
+  "email": "johndoe@example.com",
+  "position": "Software Engineer",
+  "yearsOfExperience": 50
+}
+
+###
+
+### Validation Error: Multiple issues
+POST https://localhost:7101/submit-application
+Content-Type: application/json
+
+{
+  "applicantName": "",
+  "email": "not-an-email",
+  "position": "",
+  "yearsOfExperience": -5
+}
