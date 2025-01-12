@@ -1,0 +1,21 @@
+﻿POST https://localhost:7171/process-order
+Content-Type: application/json
+
+{
+  "orderId": 123,
+  "productName": "Banana",
+  "quantity": 3
+}
+
+###
+
+POST https://localhost:7171/process-order
+Content-Type: application/json
+
+{
+  "orderId": 456,
+  "productName": "Orange",
+  "quantity": 0
+}
+
+###
