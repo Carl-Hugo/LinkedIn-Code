@@ -1,0 +1,48 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.0.0
+MinimumVisualStudioVersion = 17.8.0.0
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParallelForEachApp.AppHost", "ParallelForEachApp.AppHost\ParallelForEachApp.AppHost.csproj", "{CE0473EE-0254-4184-B365-6C9CBE080386}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParallelForEachApp.ServiceDefaults", "ParallelForEachApp.ServiceDefaults\ParallelForEachApp.ServiceDefaults.csproj", "{9417118C-5746-408B-ABB9-23DD60DE9798}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParallelForEachApp.ApiService", "ParallelForEachApp.ApiService\ParallelForEachApp.ApiService.csproj", "{B733CE2E-A33D-49E9-A849-25EF20995B8B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParallelForEachApp.Web", "ParallelForEachApp.Web\ParallelForEachApp.Web.csproj", "{F2394581-8925-44E9-86F1-687AA118D784}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallelForEachApp.RemoteDependency", "ParallelForEachApp.RemoteDependency\ParallelForEachApp.RemoteDependency.csproj", "{3E4B0D12-5F1B-42A1-B88A-EBDF1A13A67F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE0473EE-0254-4184-B365-6C9CBE080386}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE0473EE-0254-4184-B365-6C9CBE080386}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE0473EE-0254-4184-B365-6C9CBE080386}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE0473EE-0254-4184-B365-6C9CBE080386}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9417118C-5746-408B-ABB9-23DD60DE9798}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9417118C-5746-408B-ABB9-23DD60DE9798}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9417118C-5746-408B-ABB9-23DD60DE9798}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9417118C-5746-408B-ABB9-23DD60DE9798}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B733CE2E-A33D-49E9-A849-25EF20995B8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B733CE2E-A33D-49E9-A849-25EF20995B8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B733CE2E-A33D-49E9-A849-25EF20995B8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B733CE2E-A33D-49E9-A849-25EF20995B8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2394581-8925-44E9-86F1-687AA118D784}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2394581-8925-44E9-86F1-687AA118D784}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2394581-8925-44E9-86F1-687AA118D784}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2394581-8925-44E9-86F1-687AA118D784}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E4B0D12-5F1B-42A1-B88A-EBDF1A13A67F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E4B0D12-5F1B-42A1-B88A-EBDF1A13A67F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E4B0D12-5F1B-42A1-B88A-EBDF1A13A67F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E4B0D12-5F1B-42A1-B88A-EBDF1A13A67F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3D573E5A-CE49-49B1-AC61-61914491C6CF}
+	EndGlobalSection
+EndGlobal

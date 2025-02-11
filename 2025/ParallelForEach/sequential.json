@@ -1,0 +1,36 @@
+{
+    "elapsed": "00:00:12.0497613",
+    "childElapsedSum": "00:00:12.0355292",
+    "results": [
+        {
+            "key": "Authenticity.Wins",
+            "delay": 2000,
+            "elapsed": "00:00:02.0120594"
+        },
+        {
+            "key": "Build.Ship.Learn.Repeat",
+            "delay": 2000,
+            "elapsed": "00:00:02.0025885"
+        },
+        {
+            "key": "Value.Over.Hype",
+            "delay": 2000,
+            "elapsed": "00:00:02.0028937"
+        },
+        {
+            "key": "Network.Impact.Scale",
+            "delay": 2000,
+            "elapsed": "00:00:02.0061193"
+        },
+        {
+            "key": "Consistency.Beats.Motivation",
+            "delay": 2000,
+            "elapsed": "00:00:02.0066313"
+        },
+        {
+            "key": "Growth.Mindset",
+            "delay": 2000,
+            "elapsed": "00:00:02.0052371"
+        }
+    ]
+}
